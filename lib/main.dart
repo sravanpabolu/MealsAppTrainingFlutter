@@ -28,9 +28,11 @@ class MyApp extends StatelessWidget {
                 ),
               ),
         ),
-        home: CategoriesScreen()
+        // home: CategoriesScreen(),
+        initialRoute: '/',
         routes: {
-          '/categories': (context) => CategoriesMealsScreen()
+          '/': (context) => CategoriesScreen(),
+          CategoryMealsScreen.routeName: (context) => CategoryMealsScreen(),
         },
         // MyHomePage(),
         );
